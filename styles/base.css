@@ -1,0 +1,38 @@
+* {
+    background-color: #415D43;
+}
+
+#heroStatement {
+    color: #A07B6A;
+    font-size: 100px;
+    text-align: center;
+}
+
+#page1body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#trailing-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+header, footer {
+    position: relative; /* Make sure these elements are above the trailing container */
+    z-index: 2; /* Ensure they are on top */
+}
+
+.trail-image {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    opacity: 0.8;
+    transition: opacity 1s ease-out;
+}
